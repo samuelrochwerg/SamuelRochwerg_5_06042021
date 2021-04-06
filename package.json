@@ -1,0 +1,19 @@
+{
+  "name": "samuelrochwerg_5_06042021",
+  "version": "1.0.0",
+  "description": "SamuelRochwerg_5_06042021",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelrochwerg/SamuelRochwerg_5_06042021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuelrochwerg/SamuelRochwerg_5_06042021/issues"
+  },
+  "homepage": "https://github.com/samuelrochwerg/SamuelRochwerg_5_06042021#readme"
+}
