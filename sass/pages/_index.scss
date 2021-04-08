@@ -10,13 +10,15 @@
 .section__produits {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.section__produits__camera {
-    max-width: 250px;
-    margin-right: 20px;
-        img {
-            max-width: 350px;
+    padding: 0 20px;
+        &__camera {
+            width: 400px;
+            height: 350px;
+            border-radius: 20px;
+            background: rgba(243, 233, 241);
+            margin-bottom: 20px;
         }
+    
 }
