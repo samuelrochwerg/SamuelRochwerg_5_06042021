@@ -16,6 +16,62 @@
     <title>Panier</title>
 </head>
 <body>
-    
+    <header>
+        <div class="header__nav">
+            <a href="index.html"><h1><i class="fas fa-shopping-cart"></i>Orinoco</h1></a>
+            <a href="cart.html"><h2>Panier</h2></a>
+        </div>     
+    </header>
+    <section class="mt-4 rounded-md p-4 bg-oniPink">
+        <h2 class="text-lg font-bold mb-2">Votre carte</h2>
+
+        <table class="border-collapse w-full">
+          <thead>
+            <tr class="border bg-white">
+              <th class="py-2">Produit</th>
+              <th>Quantité</th>
+              <th>Prix</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+
+          <tbody id="productsList">
+            <template id="productTemplate">
+              <tr class="border bg-white rounded">
+                <td id="productName" class="text-center p-0 py-2">Arnold</td>
+                <td class="text-center p-0">
+                  <form class="flex">
+                    <select
+                      id="productQuantity"
+                      class="border border-indigo-200 rounded text-center w-full block pl-3 pr-10 py-1 text-base focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm z-10"
+                      name="quantity"
+                      id="quantity"
+                    >
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                    </select>
+                  </form>
+                </td>
+                <td id="productPrice" class="text-center p-0">x€</td>
+                <td id="productTotalPrice" class="text-center p-0">x€</td>
+              </tr>
+            </template>
+            <tr class="bg-gray-100">
+              <td colspan="3" class="text-center py-2">Total</td>
+              <td class="text-center" id="totalPrice">x€</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 </body>
 </html>
