@@ -22,6 +22,9 @@
             <a href="cart.html"><h2>Panier</h2></a>
         </div>     
     </header>
+
+    <!--Votre Panier-->
+
     <section class="mt-4 rounded-md p-4 bg-oniPink">
         <h2 class="text-lg font-bold mb-2">Votre carte</h2>
 
@@ -73,5 +76,51 @@
           </tbody>
         </table>
       </section>
+
+<!--Votre Panier-->
+
+<!-- Passer Commande -->
+
+<section class="mt-4 rounded-md p-4 bg-oniPink">
+    <h2 class="text-lg font-bold mb-2">Passer commande</h2>
+    <div class="grid grid-cols-4 gap-4">
+      <div class="flex flex-col">
+        <label for="firstname" class="label">Prénom</label>
+        <input type="text" name="firstname" id="firstname" class="input" required />
+      </div>
+      <div class="flex flex-col">
+        <label for="lastname" class="label">Nom</label>
+        <input type="text" name="lastname" id="lastname" class="input" required />
+      </div>
+      <div class="flex flex-col col-span-2">
+        <label for="email" class="label">Adresse e-mail</label>
+        <input type="text" name="email" id="email" class="input" required />
+      </div>
+      <div class="flex flex-col col-span-2">
+        <label for="adress" class="label">Adresse</label>
+        <input type="text" name="adress" id="adress" class="input" required />
+      </div>
+      <div class="flex flex-col">
+        <label for="zipcode" class="label">Code postal</label>
+        <input type="text" name="zipcode" id="zipcode" class="input" required />
+      </div>
+      <div class="flex flex-col">
+        <label for="city" class="label">Ville</label>
+        <input type="text" name="city" id="city" class="input" required />
+      </div>
+    </div>
+    <div class="flex justify-end">
+      <a
+        id="confirmPurchase"
+        class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-6"
+        href="#"
+      >
+        Procéder au paiement
+      </a>
+    </div>
+  </section>
+
+  <!-- Passer commande -->
+
 </body>
 </html>
