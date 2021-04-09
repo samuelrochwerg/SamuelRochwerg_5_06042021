@@ -1,88 +1,96 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&family=RocknRoll+One&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <title>Panier</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./public/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&family=RocknRoll+One&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <title>Panier</title>
 </head>
+
 <body>
-    <header>
-        <div class="header__nav">
-            <a href="index.html"><h1><i class="fas fa-shopping-cart"></i>     Orinoco</h1></a>
-            <a href="cart.html"><h2>Panier</h2></a>
-        </div>     
-    </header>
 
-    <!--Votre Panier-->
+  <!--Header-->
+  <header>
+    <div class="header__nav">
+      <a href="index.html">
+        <h1><i class="fas fa-shopping-cart"></i> Orinoco</h1>
+      </a>
+      <a href="cart.html">
+        <h2>Panier</h2>
+      </a>
+    </div>
+  </header>
 
-    <section class="mt-4 rounded-md p-4 bg-oniPink">
-        <h2 class="text-lg font-bold mb-2">Votre carte</h2>
+  <!--Header-->
 
-        <table class="border-collapse w-full">
-          <thead>
-            <tr class="border bg-white">
-              <th class="py-2">Produit</th>
-              <th>Quantité</th>
-              <th>Prix</th>
-              <th>Total</th>
-            </tr>
-          </thead>
+  <!--Votre Panier-->
 
-          <tbody id="productsList">
-            <template id="productTemplate">
-              <tr class="border bg-white rounded">
-                <td id="productName" class="text-center p-0 py-2">Arnold</td>
-                <td class="text-center p-0">
-                  <form class="flex">
-                    <select
-                      id="productQuantity"
-                      class="border border-indigo-200 rounded text-center w-full block pl-3 pr-10 py-1 text-base focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm z-10"
-                      name="quantity"
-                      id="quantity"
-                    >
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                    </select>
-                  </form>
-                </td>
-                <td id="productPrice" class="text-center p-0">x€</td>
-                <td id="productTotalPrice" class="text-center p-0">x€</td>
-              </tr>
-            </template>
-            <tr class="bg-gray-100">
-              <td colspan="3" class="text-center py-2">Total</td>
-              <td class="text-center" id="totalPrice">x€</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+  <section class="mt-4 rounded-md p-4 bg-oniPink">
+    <h2 class="text-lg font-bold mb-2">Votre carte</h2>
 
-<!--Votre Panier-->
+    <table class="border-collapse w-full">
+      <thead>
+        <tr class="border bg-white">
+          <th class="py-2">Produit</th>
+          <th>Quantité</th>
+          <th>Prix</th>
+          <th>Total</th>
+        </tr>
+      </thead>
 
-<!-- Passer Commande -->
+      <tbody id="productsList">
+        <template id="productTemplate">
+          <tr class="border bg-white rounded">
+            <td id="productName" class="text-center p-0 py-2">Arnold</td>
+            <td class="text-center p-0">
+              <form class="flex">
+                <select id="productQuantity"
+                  class="border border-indigo-200 rounded text-center w-full block pl-3 pr-10 py-1 text-base focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm z-10"
+                  name="quantity" id="quantity">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </form>
+            </td>
+            <td id="productPrice" class="text-center p-0">x€</td>
+            <td id="productTotalPrice" class="text-center p-0">x€</td>
+          </tr>
+        </template>
+        <tr class="bg-gray-100">
+          <td colspan="3" class="text-center py-2">Total</td>
+          <td class="text-center" id="totalPrice">x€</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
-<section class="mt-4 rounded-md p-4 bg-oniPink">
+  <!--Votre Panier-->
+
+  <!-- Passer Commande -->
+
+  <section class="mt-4 rounded-md p-4 bg-oniPink">
     <h2 class="text-lg font-bold mb-2">Passer commande</h2>
     <div class="grid grid-cols-4 gap-4">
       <div class="flex flex-col">
@@ -111,11 +119,9 @@
       </div>
     </div>
     <div class="flex justify-end">
-      <a
-        id="confirmPurchase"
+      <a id="confirmPurchase"
         class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-6"
-        href="order_confirmation.html"
-      >
+        href="order_confirmation.html">
         Procéder au paiement
       </a>
     </div>
@@ -123,5 +129,19 @@
 
   <!-- Passer commande -->
 
+  <!--Footer-->
+
+  <footer>
+    <a href="mailto:contact@orinoco.fr">
+      <h3>Contact</h3>
+    </a>
+    <a href="#">
+      <h3>Mentions légales</h3>
+    </a>
+  </footer>
+
+  <!--Footer-->
+
 </body>
+
 </html>

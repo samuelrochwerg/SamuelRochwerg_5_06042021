@@ -359,4 +359,14 @@ header {
   color: #DA33FF;
 }
 
+footer {
+  max-width: 100%;
+  background-color: #f3e9f1;
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
 /*# sourceMappingURL=style.css.map */
