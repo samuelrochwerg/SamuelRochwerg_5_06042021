@@ -26,11 +26,25 @@ a:hover {
   padding: 0 20px;
 }
 .section__produits__camera {
-  width: 400px;
-  height: 350px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 400px;
   border-radius: 20px;
   background: #f3e9f1;
   margin-bottom: 20px;
+  margin-right: 15px;
+}
+
+.section_produits_camera__name {
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.description__text {
+  text-align: center;
 }
 
 .p-4 {
