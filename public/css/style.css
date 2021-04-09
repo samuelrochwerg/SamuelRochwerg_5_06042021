@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -13,8 +14,8 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
-  color: blueviolet;
+  text-decoration: none;
+  color: #DA33FF;
 }
 
 .section__produits {
@@ -347,6 +348,15 @@ header {
   background-color: #f3e9f1;
   max-width: 100%;
   padding: 20px 20px;
+}
+.header__nav h1, .header__nav h2 {
+  font-family: "Roboto Mono", monospace;
+  font-family: "RocknRoll One", sans-serif;
+}
+
+.fa-shopping-cart:before {
+  content: "";
+  color: #DA33FF;
 }
 
 /*# sourceMappingURL=style.css.map */

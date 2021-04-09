@@ -11,4 +11,13 @@ header {
     background-color: rgba(243, 233, 241);
     max-width: 100%;
     padding: 20px 20px;
+    h1, h2 {
+        font-family: 'Roboto Mono', monospace;
+        font-family: 'RocknRoll One', sans-serif;
+    }
+}
+
+.fa-shopping-cart:before {
+    content: "\f07a";
+    color: #DA33FF;
 }
