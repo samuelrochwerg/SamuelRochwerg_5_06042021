@@ -1,3 +1,6 @@
+const footer = document.querySelector("footer");
+footer.style.backgroundColor = "red";
+
 fetch("http://localhost:3000/api/cameras")
 .then(response => response.json())
 .then(response => {
@@ -15,3 +18,4 @@ const addition = (nombre1, nombre2) => {
 
 
 console.log(addition(10, 25))
+
