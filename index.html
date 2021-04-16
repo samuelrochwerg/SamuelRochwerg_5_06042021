@@ -19,7 +19,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-        
+
 </head>
 
 <body>
@@ -43,16 +43,19 @@
         <!--Section-->
 
         <section class="section__produits" id="section__produits">
-            <a href="product.html">
-                <article class="section__produits__camera">
-                    <img src='http://fakeimg.pl/270x200' alt='' />
-                    <div class="section__produits__camera__description">
-                        <h3 class="section_produits_camera__name">Norbert</h3>
-                            <h3 class="section_produits_camera__price">29.00E</h3>
-                        <p class="description__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, architecto.</p>
-                    </div>
-                </article>
-            </a>
+            <template id="templateArticle">
+                <a href="product.html">
+                    <article class="section__produits__camera">
+                        <img src='http://fakeimg.pl/270x200' id="image_camera" alt='Photo Caméra' />
+                        <div class="section__produits__camera__description">
+                            <h3 class="section_produits_camera__name" id="section_produits_camera__name">Norbert</h3>
+                            <h3 class="section_produits_camera__price" id="section_produits_camera__price">29.00E</h3>
+                            <p class="description__text" id="description__text">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Sapiente, architecto.</p>
+                        </div>
+                    </article>
+                </a>
+            </template>
             <!-- <a href="product.html">
                 <div class="section__produits__camera">
                     <img src='http://fakeimg.pl/270x200' alt='' />

@@ -9,10 +9,6 @@ fetch("http://localhost:3000/api/cameras")
 })
 .catch(error => alert("Erreur : " + error));
 
-
-// const produitCamera = document.querySelector(".section_produits_camera__name h3");
-// produitCamera.style.backgroundColor = "red";
-
 main()
 
 async function main() {
@@ -36,6 +32,21 @@ function getArticles() {
    })
 }
 
+// function displayArticle(article) {
+//     const templateElt = document.getElementById("templateArticle")
+//     const cloneElt = document.importNode(templateElt.content, true);
+
+//     cloneElt.getElementById("section_produits_camera__name").textContent = article.name 
+//     cloneElt.getElementById("section_produits_camera__price").textContent = article.price
+//     cloneElt.getElementById("description__text").textContent = article.description
+//     cloneElt.getElementById("image_camera").textContent = article.imageUrl
+
+//     document.getElementById("section__produits").appendChild(cloneElt)
+
+// }
+
+//Même chose mais en moins propre//
+
 function displayArticle(article) {
     document.getElementById("section__produits").innerHTML += `
     <a href="product.html">
@@ -43,7 +54,7 @@ function displayArticle(article) {
                     <img src='${article.imageUrl}' alt='' />
                     <div class="section__produits__camera__description">
                         <h3 class="section_produits_camera__name">${article.name}</h3>
-                            <h3 class="section_produits_camera__price">${article.price}</h3>
+                            <h3 class="section_produits_camera__price">${article.price + " €"}</h3>
                         <p class="description__text">${article.description}</p>
                     </div>
                 </article>
