@@ -32,6 +32,8 @@ function getArticles() {
    })
 }
 
+//Modèle Template mais l'image ne s'affiche pas
+
 // function displayArticle(article) {
 //     const templateElt = document.getElementById("templateArticle")
 //     const cloneElt = document.importNode(templateElt.content, true);
