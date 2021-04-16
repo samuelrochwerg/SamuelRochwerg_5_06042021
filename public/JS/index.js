@@ -1,13 +1,13 @@
 // const footer = document.querySelector("footer");
 // footer.style.backgroundColor = "red";
 
-// fetch("http://localhost:3000/api/cameras")
-// .then(response => response.json())
-// .then(response => {
-//     console.log(response)
+fetch("http://localhost:3000/api/cameras")
+.then(response => response.json())
+.then(response => {
+    console.log(response)
  
-// })
-// .catch(error => alert("Erreur : " + error));
+})
+.catch(error => alert("Erreur : " + error));
 
 
 // const produitCamera = document.querySelector(".section_produits_camera__name h3");
@@ -36,9 +36,16 @@ function getArticles() {
    })
 }
 
-function displayArticle() {
-    const templateElt = document.getElementById("templateArticle")
-    const cloneElt = document.importNode(templateElt.content, true)
-
-    cloneElt.getElementById
+function displayArticle(article) {
+    document.getElementById("section__produits").innerHTML += `
+    <a href="product.html">
+                <article class="section__produits__camera">
+                    <img src='${article.imageUrl}' alt='' />
+                    <div class="section__produits__camera__description">
+                        <h3 class="section_produits_camera__name">${article.name}</h3>
+                            <h3 class="section_produits_camera__price">${article.price}</h3>
+                        <p class="description__text">${article.description}</p>
+                    </div>
+                </article>
+            </a>`
 }

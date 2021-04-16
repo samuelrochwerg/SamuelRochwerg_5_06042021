@@ -36,6 +36,13 @@ a:hover {
         }
 }
 
+.section__produits__camera__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .section_produits_camera__name {
     padding: 10px 10px;
     display: flex;
@@ -45,5 +52,6 @@ a:hover {
 
 .description__text {
     text-align: center;
+    margin-bottom: 10px;
 }
 
