@@ -51,7 +51,7 @@ function getArticles() {
 
 function displayArticle(article) {
     document.getElementById("section__produits").innerHTML += `
-    <a href="product.html">
+    <a href="product.html?id=${article._id}">
                 <article class="section__produits__camera">
                     <img src='${article.imageUrl}' alt='' />
                     <div class="section__produits__camera__description">
