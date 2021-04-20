@@ -56,7 +56,7 @@ function displayArticle(article) {
                     <img src='${article.imageUrl}' alt='' />
                     <div class="section__produits__camera__description">
                         <h3 class="section_produits_camera__name">${article.name}</h3>
-                            <h3 class="section_produits_camera__price">${article.price + " €"}</h3>
+                            <h3 class="section_produits_camera__price">${article.price / 100 + " €"}</h3>
                         <p class="description__text">${article.description}</p>
                     </div>
                 </article>
