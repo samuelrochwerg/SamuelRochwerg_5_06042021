@@ -363,7 +363,7 @@ table {
 }
 
 .p-4 {
-  padding: 1rem;
+  padding: 0rem;
 }
 
 .mt-4 {
@@ -562,6 +562,10 @@ img {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+#addToCart:hover {
+  color: #DA33FF;
 }
 
 /*Header*/
