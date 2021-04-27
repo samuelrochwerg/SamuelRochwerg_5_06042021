@@ -36,12 +36,12 @@ function hydratePage(product) {
   }
 
   // Get parent element
-  const colorsElt = document.getElementById('productColors')
+  const colorsElt = document.getElementById('productLength')
 
   // Display all colors
   product.colors.forEach((color) => {
     // Get & clone template for one color
-    const templateElt = document.getElementById('productColor')
+    const templateElt = document.getElementById('productLength')
     const cloneElt = document.importNode(templateElt.content, true)
 
     // Hydrate color clone
